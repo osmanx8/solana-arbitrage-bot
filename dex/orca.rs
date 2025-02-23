@@ -122,6 +122,26 @@ impl DexIntegration for Orca {
         
         Ok(balances)
     }
+
+    async fn get_prices(&self) -> HashMap<String, f64> {
+        // Implement price fetching logic
+        HashMap::new()
+    }
+
+    async fn get_account_balances(&self, account: &Pubkey) -> HashMap<String, f64> {
+        // Implement balance fetching logic
+        HashMap::new()
+    }
+
+    async fn place_order(&self, market: &str, side: &str, size: f64, price: f64) -> Option<String> {
+        // Implement order placement logic
+        None
+    }
+
+    async fn cancel_order(&self, order_id: &str) -> bool {
+        // Implement order cancellation logic
+        false
+    }
 }
 
 impl Orca {
@@ -136,12 +156,10 @@ impl Orca {
     //     Ok(pool_data)
     // }
 
-    async fn get_token_account(&self, token_mint: &Pubkey) -> Result<Pubkey> {
-        let token_account = spl_associated_token_account::get_associated_token_address(
+    async fn get_token_account(&self, token_mint: &Pubkey) -> Pubkey {
+        spl_associated_token_account::get_associated_token_address(
             &self.authority.pubkey(),
             token_mint,
-        );
-        
-        Ok(token_account)
+        )
     }
 }
