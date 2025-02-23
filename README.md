@@ -26,7 +26,7 @@ This is a high-performance Solana arbitrage bot that scans decentralized exchang
 ### Steps
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/solana-arbitrage-bot.git
+   git clone https://github.com/bitfancy/solana-arbitrage-bot.git
    cd solana-arbitrage-bot
    ```
 2. Install dependencies:
