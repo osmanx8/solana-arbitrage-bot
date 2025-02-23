@@ -1,4 +1,4 @@
-use crate::dex::dex_trait::DexTrait;
+use crate::dex::DexIntegration;
 use crate::error::Result;
 use crate::models::market::Market;
 use crate::models::order::{Order, OrderSide, OrderStatus, OrderType};
@@ -26,7 +26,7 @@ impl Orca {
 }
 
 #[async_trait]
-impl DexTrait for Orca {
+impl DexIntegration for Orca {
     async fn get_markets(&self) -> Result<Vec<Market>> {
         let mut markets = Vec::new();
         
