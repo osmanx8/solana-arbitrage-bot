@@ -31,7 +31,7 @@ This is a high-performance Solana arbitrage bot that scans decentralized exchang
    ```
 2. Install dependencies:
    ```sh
-   npm install  # or pip install -r requirements.txt if using Python
+   cargo build
    ```
 3. Set up your environment variables in a `.env` file:
    ```env
@@ -40,7 +40,7 @@ This is a high-performance Solana arbitrage bot that scans decentralized exchang
    ```
 4. Run the bot:
    ```sh
-   npm start  # or python bot.py if using Python
+   cargo run
    ```
 
 ## 🔧 Configuration
