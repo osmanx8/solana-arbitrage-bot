@@ -55,4 +55,4 @@ This software is available under the MIT License — use, modify, and distribute
 Got ideas or improvements? Contributions are highly appreciated! Feel free to fork, submit PRs, or open issues for bugs and feature requests.
 ---
 📬 Contact
-Questions, collaborations, or support? Reach out on Telegram: @ShadowRusii
+Questions, collaborations, or support? Reach out on Telegram: @web3_maxim
